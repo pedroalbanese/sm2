@@ -6,4 +6,4 @@ Parameters for the SM2 Elliptic curve
 
 This project is licensed under the ISC License.
 
-##### Industrial-Grade Reliability. Copyright (c) 2020-2021 ALBANESE Research Lab.
+##### Industrial-Grade Reliability. Copyright (c) 2020-2022 ALBANESE Research Lab.
