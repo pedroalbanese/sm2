@@ -10,7 +10,7 @@ import (
 var initonce sync.Once
 var sm2 *elliptic.CurveParams
 
-func initSM2() {
+func initP256() {
 	sm2 = new(elliptic.CurveParams)
 	sm2.P, _ = new(big.Int).SetString("fffffffeffffffffffffffffffffffffffffffff00000000ffffffffffffffff", 16)
 	sm2.N, _ = new(big.Int).SetString("fffffffeffffffffffffffffffffffff7203df6b21c6052b53bbf40939d54123", 16)
@@ -20,7 +20,7 @@ func initSM2() {
 	sm2.BitSize = 256
 }
 
-func SM2() elliptic.Curve {
-	initonce.Do(initSM2)
+func P256() elliptic.Curve {
+	initonce.Do(initP256)
 	return sm2
 }
