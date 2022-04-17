@@ -1,5 +1,5 @@
 // Parameters for the SM2 Elliptic curve
-package sm2
+package sm2p256v1
 
 import (
 	"crypto/elliptic"
